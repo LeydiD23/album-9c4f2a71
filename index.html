@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Una carta romántica, recuerdos y canciones que me saben a ti.">
+  <title>Para ti | Nuestra historia</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="M12 2.6 13.6 9l6.4 1.7-6.4 1.7L12 19l-1.6-6.6L4 10.7 10.4 9Z" fill="currentColor"/>
+      <circle cx="18.8" cy="4.6" r="1.1" fill="currentColor" opacity=".55"/>
+    </symbol>
+    <symbol id="icon-note" viewBox="0 0 24 24">
+      <path d="M9 18.2a3 3 0 1 1-2-2.8V6.4l11-2.2v9.8a3 3 0 1 1-2-2.8V7.5L9 9.1Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M12 4v15M6.5 13.5 12 19l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="35" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+      <circle cx="60" cy="60" r="25" fill="none" stroke="currentColor" stroke-width=".7" stroke-dasharray="1 5" opacity=".55"/>
+      <path d="M60 15v90M15 60h90" fill="none" stroke="currentColor" stroke-width=".7" opacity=".18"/>
+      <path d="M76 44 66 66 44 76l10-22Z" fill="currentColor" opacity=".8"/>
+      <circle cx="60" cy="60" r="2.4" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24">
+      <path d="M4 9v6h4l5 4V5L8 9H4Z" fill="currentColor"/>
+      <path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <nav class="dot-nav" aria-label="Navegación de la página">
+    <a href="#inicio" class="dot-nav__link is-active" data-nav="inicio" aria-label="Inicio"><span></span><em>Inicio</em></a>
+    <a href="#carta" class="dot-nav__link" data-nav="carta" aria-label="La carta"><span></span><em>La carta</em></a>
+    <a href="#recuerdos" class="dot-nav__link" data-nav="recuerdos" aria-label="Recuerdos"><span></span><em>Recuerdos</em></a>
+    <a href="#musica" class="dot-nav__link" data-nav="musica" aria-label="Canciones que me saben a ti"><span></span><em>Música</em></a>
+    <a href="#final" class="dot-nav__link" data-nav="final" aria-label="Final"><span></span><em>Final</em></a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero" data-section>
+      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">Una carta hecha con calma y con amor</p>
+        <h1>Eres mi <em>lugar favorito</em></h1>
+        <p class="hero__subtitle">Hay personas que llegan y, sin hacer ruido, se quedan en todo lo que uno mira.</p>
+        <div class="hero__meta">
+          <div><span>Para</span><strong>Mi bubalu</strong></div>
+          <div><span>De</span><strong>El amor de tu vida</strong></div>
+        </div>
+        <a href="#carta" class="btn btn--primary">Abrir la carta <span aria-hidden="true">→</span></a>
+      </div>
+
+      <a href="#historia" class="hero__scroll" aria-label="Desliza para comenzar">
+        <span>Desliza</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section id="historia" class="section intro" data-section>
+      <div class="container intro__inner reveal">
+        <p class="script">Nuestra historia</p>
+        <h2>Hay historias que se escriben sin prisa, con la certeza de que el corazón ya eligió.</h2>
+        <div class="ornament" aria-hidden="true"><span></span><svg><use href="#icon-star"></use></svg><span></span></div>
+      </div>
+    </section>
+
+    <section id="carta" class="section letter-section" data-section>
+      <div class="container letter-grid">
+        <div class="letter-copy reveal">
+          <p class="eyebrow">La carta</p>
+          <h2>Palabras que guardé para ti</h2>
+          <p>Lee con calma. Cada línea está pensada para ti, incluso las que se quedaron cortas porque no alcanzan las palabras.</p>
+          <div class="letter-details">
+            <div><span>Para</span><strong>Mi bubalu</strong></div>
+            <div><span>De</span><strong>El amor de tu vida</strong></div>
+          </div>
+          <blockquote class="letter-quote">
+            “Si tuviera que elegir un lugar para quedarme, elegiría cualquier sitio donde estés tú.”
+          </blockquote>
+        </div>
+
+        <div class="envelope-stage reveal" id="envelopeStage">
+          <button class="envelope" id="envelopeButton" type="button" aria-label="Abrir la carta">
+            <span class="envelope__back" aria-hidden="true"></span>
+            <span class="envelope__letter" aria-hidden="true">Para ti</span>
+            <span class="envelope__front" aria-hidden="true"></span>
+            <span class="envelope__flap" aria-hidden="true"></span>
+            <span class="envelope__seal" aria-hidden="true">T &amp; Y</span>
+          </button>
+          <p class="envelope__hint" id="envelopeHint">La carta está dentro. Toca el sobre para abrirla.</p>
+        </div>
+      </div>
+
+      <div class="letter-overlay" id="letterOverlay" aria-hidden="true">
+        <div class="letter-overlay__backdrop" id="letterBackdrop"></div>
+        <button class="letter-close" id="letterClose" type="button" aria-label="Cerrar la carta">
+          Cerrar <span aria-hidden="true">×</span>
+        </button>
+        <article class="letter-paper" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+          <div class="letter-paper__photo" aria-hidden="true"></div>
+          <div class="letter-paper__top" aria-hidden="true"><span></span><svg><use href="#icon-star"></use></svg><span></span></div>
+          <h3 id="letterTitle">Feliz cumpleaños, mi amor. <span class="letter-heart" aria-hidden="true">♥</span></h3>
+          <p>Hoy quiero desearte, de todo corazón, que tengas un día tan bonito como tú y que la vida te siga regalando motivos para sonreír. Me hace muy feliz tener la dicha de poder celebrar este día contigo, de acompañarte y de ser parte de un momento tan especial para ti.</p>
+          <p>Sé que todavía nos queda mucho camino por recorrer, muchos obstáculos que superar, conversaciones que tener, situaciones que aprender a manejar y experiencias que vivir. Pero ¿sabes qué? Me gustaría vivir cada una de ellas contigo. Porque entiendo que todo eso también forma parte del proceso de construir algo bonito y que no todo será siempre perfecto, pero creo que lo importante es tener las ganas de seguir eligiéndonos, aprender juntos y encontrar la manera de salir adelante.</p>
+          <p>A veces siento que la expresión «te amo» se queda demasiado corta para explicar lo que siento por ti. Es curioso cómo una palabra tan pequeña intenta abarcar un sentimiento tan grande. Y es que no sé si existe una manera exacta de explicarte todo lo que provocas en mí, lo mucho que significas y lo feliz que me hace tenerte en mi vida.</p>
+          <p>Me da hasta gracia pensar que llevamos relativamente poco tiempo y que, aun así, nos queremos de una manera que parece que el mundo va a explotar. Pero creo que es cierto eso que dicen: no siempre hacen falta siete años para conocer la esencia de una persona y darte cuenta de lo que representa. A veces, desde el principio, hay cosas que simplemente se sienten, y contigo me ha pasado eso.</p>
+          <p>También quiero que sepas que tengo muy presente todo lo que me dices, incluso cuando me recalcas que debo esperarte y que las cosas llevan su tiempo. Créeme que lo tengo mucho más presente de lo que imaginas. Sé que no será fácil y que hay cosas que requieren paciencia, esfuerzo y preparación, pero si de algo estoy segura es de que quiero construir una vida contigo. Y si para eso tengo que esperarte lo que haga falta, lo haría con muchísimo gusto, porque no se trata solamente de llegar a una meta, sino de que podamos llegar juntos. Al final, solo nos queda hacer las cosas bien, confiar en Dios y esperar que Él nos permita decir: amén, llegó el momento.</p>
+          <p>Le pido a Dios que siempre ilumine tu camino, que te dé sabiduría para manejar cada situación que se presente en tu vida, que guíe tus decisiones y te permita seguir creciendo y alcanzando cada una de las metas que te propongas. Que nunca te falten las fuerzas para continuar, las oportunidades para progresar ni las personas que te quieran de corazón. Deseo que la vida te devuelva en bendiciones todo lo bonito que llevas dentro.</p>
+          <p>Espero que este nuevo año de vida venga cargado de oportunidades, aprendizajes, logros y momentos que te hagan sentir orgulloso de la persona en la que te estás convirtiendo. Y, sobre todo, espero poder seguir estando a tu lado para celebrar tus victorias, acompañarte en los días difíciles y compartir contigo todas esas pequeñas y grandes cosas que nos esperan.</p>
+          <p>Gracias por permitirme compartir tu vida y por hacerme sentir tantas cosas bonitas. No sé qué nos depara el futuro en cada detalle, pero sí sé que me gustaría descubrirlo contigo.</p>
+          <p><strong>Feliz cumpleaños, mi bubalu.</strong> Espero que recibas todo lo bonito que mereces, porque eres una persona preciosa, no solamente por fuera, sino también por dentro, y deseo de corazón que nunca pierdas esa esencia que te hace ser tú.</p>
+          <p>Te amo muchísimo, más de lo que estas palabras pueden explicar.</p>
+          <p class="letter-signature">Humildemente,<br><span>El amor de tu vida</span></p>
+          <p class="letter-postscript"><em>Te amo, bubalu de fresa. <span class="letter-heart" aria-hidden="true">♥</span></em></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="recuerdos" class="section gallery-section" data-section>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Recuerdos</p>
+          <h2>Momentos que quiero guardar</h2>
+          <p>Algunos instantes merecen quedarse para siempre. Estos son algunos de los que todavía me hacen sonreír.</p>
+        </header>
+
+        <div class="gallery" id="gallery">
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="El día que todo empezó">
+              <span class="photo-media">
+                <img src="fotos/foto-03.jpeg" alt="El día que todo empezó" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>01</span> El día que todo empezó</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide reveal">
+            <button class="photo-card" type="button" data-caption="Nuestra primera aventura">
+              <span class="photo-media">
+                <img src="fotos/foto-02.jpeg" alt="Nuestra primera aventura" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>02</span> Nuestra primera aventura</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--square reveal">
+            <button class="photo-card" type="button" data-caption="Tu risa, mi lugar seguro">
+              <span class="photo-media">
+                <img src="fotos/foto-14.jpeg" alt="Tu risa, mi lugar seguro" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>03</span> Tu risa, mi lugar seguro</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Tardes que no quería que terminaran">
+              <span class="photo-media">
+                <img src="fotos/foto-04.jpeg" alt="Tardes que no quería que terminaran" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>04</span> Tardes que no quería que terminaran</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide reveal">
+            <button class="photo-card" type="button" data-caption="Un instante cualquiera">
+              <span class="photo-media">
+                <img src="fotos/foto-11.jpeg" alt="Un instante cualquiera" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>05</span> Un instante cualquiera</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--square reveal">
+            <button class="photo-card" type="button" data-caption="Siempre nosotros">
+              <span class="photo-media">
+                <img src="fotos/foto-08.jpeg" alt="Siempre nosotros" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>06</span> Siempre nosotros</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Mi persona favorita">
+              <span class="photo-media">
+                <img src="fotos/foto-05.jpeg" alt="Mi persona favorita" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>07</span> Mi persona favorita</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide reveal">
+            <button class="photo-card" type="button" data-caption="Contigo, todo es mejor">
+              <span class="photo-media">
+                <img src="fotos/foto-10.jpeg" alt="Contigo, todo es mejor" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>08</span> Contigo, todo es mejor</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--square reveal">
+            <button class="photo-card" type="button" data-caption="Un recuerdo que guardo">
+              <span class="photo-media">
+                <img src="fotos/foto-16.jpeg" alt="Un recuerdo que guardo" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>09</span> Un recuerdo que guardo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Tu mirada">
+              <span class="photo-media">
+                <img src="fotos/foto-06.jpeg" alt="Tu mirada" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>10</span> Tu mirada</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide reveal">
+            <button class="photo-card" type="button" data-caption="Nuestro pequeño mundo">
+              <span class="photo-media">
+                <img src="fotos/foto-12.jpeg" alt="Nuestro pequeño mundo" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>11</span> Nuestro pequeño mundo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="La calma contigo">
+              <span class="photo-media">
+                <img src="fotos/foto-07.jpeg" alt="La calma contigo" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>12</span> La calma contigo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Momentos que valen oro">
+              <span class="photo-media">
+                <img src="fotos/foto-09.jpeg" alt="Momentos que valen oro" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>13</span> Momentos que valen oro</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Para siempre, si se puede">
+              <span class="photo-media">
+                <img src="fotos/foto-13.jpeg" alt="Para siempre, si se puede" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>14</span> Para siempre, si se puede</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall reveal">
+            <button class="photo-card" type="button" data-caption="Nuestro momento favorito">
+              <span class="photo-media">
+                <img src="fotos/foto-01.jpeg" alt="Nuestro momento favorito" loading="lazy" decoding="async">
+                <span class="photo-card__overlay"><span>Ver recuerdo</span></span>
+              </span>
+            </button>
+            <figcaption><span>15</span> Nuestro momento favorito</figcaption>
+          </figure>
+        </div>
+
+        <p class="gallery__hint">Haz clic en cada foto para verla en grande.</p>
+      </div>
+    </section>
+
+    <section id="musica" class="section music-section" data-section>
+      <div class="container music-wrap">
+        <div class="music-copy reveal">
+          <p class="eyebrow eyebrow--light">Para escucharte</p>
+          <h2>Canciones que me saben a ti</h2>
+          <p>Te dejé una lista de canciones que me recuerdan a ti. Abajo de cada una está su enlace para escucharla donde quieras; la última es tu canción.</p>
+          <div class="music-hint">
+            <svg><use href="#icon-note"></use></svg>
+            <span>Diez canciones para recordarte y una que es tuya.</span>
+          </div>
+        </div>
+
+        <ul class="song-list reveal" aria-label="Lista de canciones">
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">01</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Adoro <span>Armando Manzanero</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=adoro+armando+manzanero+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=adoro+armando+manzanero+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">02</span>
+            <div class="song-list__body">
+              <p class="song-list__title">El amor <span>José Luis Perales</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=el+amor+jose+luis+perales+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=el+amor+jose+luis+perales+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">03</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Almohada <span>José José</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=almohada+jose+jose+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=almohada+jose+jose+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">04</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Mi vida sin tu amor <span>Cristian Castro</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=mi+vida+sin+tu+amor+cristian+castro+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=mi+vida+sin+tu+amor+cristian+castro+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">05</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Por amarte así <span>Cristian Castro</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=por+amarte+asi+cristian+castro+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=por+amarte+asi+cristian+castro+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">06</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Tú de qué vas <span>Franco de Vita</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=tu+de+que+vas+franco+de+vita+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=tu+de+que+vas+franco+de+vita+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">07</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Qué pasará mañana <span>José Luis Perales</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=que+pasara+manana+jose+luis+perales+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=que+pasara+manana+jose+luis+perales+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">08</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Quiero perderme contigo <span>José José</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=quiero+perderme+contigo+jose+jose+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=quiero+perderme+contigo+jose+jose+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">09</span>
+            <div class="song-list__body">
+              <p class="song-list__title">La más bella herejía <span>Braulio</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=la+mas+bella+herejia+braulio+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=la+mas+bella+herejia+braulio+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item">
+            <span class="song-list__index" aria-hidden="true">10</span>
+            <div class="song-list__body">
+              <p class="song-list__title">Derroche <span>Ana Belén</span></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=derroche+ana+belen+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=derroche+ana+belen+oficial</a>
+            </div>
+          </li>
+          <li class="song-list__item song-list__item--special">
+            <span class="song-list__index" aria-hidden="true">11</span>
+            <div class="song-list__body">
+              <p class="song-list__title">A dónde vamos <span>Morat</span> <em class="song-list__badge">Tu canción</em></p>
+              <a class="song-list__url" href="https://www.youtube.com/results?search_query=a+donde+vamos+morat+oficial" target="_blank" rel="noopener noreferrer">https://www.youtube.com/results?search_query=a+donde+vamos+morat+oficial</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="final" class="section closing" data-section>
+      <div class="container closing__inner reveal">
+        <div class="closing__icon" aria-hidden="true"><svg><use href="#icon-star"></use></svg></div>
+        <p class="script">Y esto es solo el comienzo</p>
+        <h2>Feliz cumpleaños, Jocsan.</h2>
+        <p>No sé cuántos capítulos nos queden por escribir, pero sí sé que quiero escribirlos contigo. Gracias por cada risa, cada abrazo y cada día que elegiste quedarte.</p>
+        <button class="btn btn--ghost" id="secretButton" type="button">¿Quieres saber un secreto?</button>
+        <p class="secret-note" id="secretNote">Que siempre se quede entre nosotros y los muebles cuánto nos queremos.</p>
+        <a href="#inicio" class="back-top">Volver al inicio <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Hecho con amor, para ti.</p>
+      <p class="footer__small">Tú &amp; yo · Nuestra historia</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visor de recuerdos">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Cerrar visor">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Foto anterior">‹</button>
+    <div class="lightbox__content">
+      <div class="lightbox__media" id="lightboxMedia"></div>
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Foto siguiente">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
